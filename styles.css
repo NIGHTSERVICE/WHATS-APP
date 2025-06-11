@@ -1,0 +1,129 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: 'Roboto', sans-serif; /* Google font */
+  background: linear-gradient(135deg, #ff6b81, #f8a5c2); /* Gradient with pink shades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Container for content */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; /* Make container column-oriented */
+}
+
+/* Logo Style */
+.logo {
+  width: 150px; /* Adjust size */
+  margin-bottom: 20px; /* Space between logo and content */
+}
+
+/* Button Style */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* WhatsApp Button Style */
+.whatsapp {
+  background-color: #25D366; /* Original WhatsApp Green */
+}
+
+.whatsapp:hover {
+  background-color: #128C7E;
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Girl Booking Button Style with Pink */
+.girl-booking {
+  background-color: #FF6F61; /* Soft Pink */
+}
+
+.girl-booking:hover {
+  background-color: #FF3B30; /* Darker Pink */
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Hotel Booking Button Style with Pink */
+.hotel-booking {
+  background-color: #ff76b8; /* Pinkish Color */
+}
+
+.hotel-booking:hover {
+  background-color: #e64a8d; /* Darker Pink */
+  transform: translateY(-5px); /* Hover effect */
+}
+
+/* Left and Right Button Positioning */
+.left {
+  margin-right: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+/* Hover Effect on All Buttons */
+.button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+    flex-direction: column; /* Stack items on smaller screens */
+  }
+
+  .image {
+    width: 100%; /* Make images full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+  }
+}
